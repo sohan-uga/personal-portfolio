@@ -1,58 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sohan Shankar's VR Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f2f2f2;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    main {
-      margin: 15px;
-      padding: 15px;
-    }
-    .video-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .video-item {
-      width: calc(50% - 10px);
-      margin-bottom: 20px;
-    }
-    .video-item iframe {
-      width: 100%;
-      height: 315px;
-    }
-    .video-title {
-      font-size: 18px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    .video-description {
-      margin-top: 5px;
-    }
-    .github-link {
-      margin-top: 20px;
-      font-size: 18px;
-    }
-  </style>
+    <title>Sohan Shankar's VR Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.5em;
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+        }
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        .video-item {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .video-item iframe {
+            width: 100%;
+            height: 315px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .video-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        .video-description {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .github-link {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .github-link a {
+            font-size: 18px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .github-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Sohan Shankar's VR Portfolio</h1>
-  </header>
-
-  <main>
-    <!-- First Submission Heading -->
+    <header>
+        <h1>Sohan Shankar's VR Portfolio</h1>
+    </header>
+    <main>
+           <!-- First Submission Heading -->
     <h2>First Submission</h2>
     <div class="video-container">
       <!-- Video 1 -->
@@ -89,30 +112,30 @@
     <div class="video-container">
       <!-- Video 5 -->
       <div class="video-item">
-        <iframe src="https://www.youtube.com/embed/iIvvqRMVtIo?si=G4pkWa9sYFsQO9CV" frameborder="0" allowfullscreen></iframe>
-        <div class="video-title">Portfolio 5: [Video Title]</div>
-        <div class="video-description">[Video Description]</div>
+        <iframe src="https://www.youtube.com/embed/M7250MoTQFE?si=E1Y96rjlvVJZbzYT" frameborder="0" allowfullscreen></iframe>
+        <div class="video-title">Portfolio 5: Zombies</div>
+        <div class="video-description">In this demo, I spawned GLTF zombie avatars that track the user and walk towards them, using a walking animation and a blended animation. I also implemented more movement functionality to MyMovement.cs. This required knowledge of avtars, animation, animation blending, and VR movement.</div>
       </div>
 
       <!-- Video 6 -->
       <div class="video-item">
-        <iframe src="https://www.youtube.com/embed/iIvvqRMVtIo?si=G4pkWa9sYFsQO9CV" frameborder="0" allowfullscreen></iframe>
-        <div class="video-title">Portfolio 6: [Video Title]</div>
-        <div class="video-description">[Video Description]</div>
+        <iframe src="https://www.youtube.com/embed/PZMroWaZVsA?si=1xmuRKWI5EEkJB8f" frameborder="0" allowfullscreen></iframe>
+        <div class="video-title">Portfolio 6: Fruit Samurai</div>
+        <div class="video-description">In this demo, fruits are spawned, which a katana is then able to slice into two objects. I had to figure out the positioning and math of the sword to know where the cut is and identify the plane of the cut, and could then implement the base script that was used for cutting from 2D input. This required knowledge of plane math and decimating in Blender.</div>
       </div>
 
       <!-- Video 7 -->
       <div class="video-item">
-        <iframe src="https://www.youtube.com/embed/iIvvqRMVtIo?si=G4pkWa9sYFsQO9CV" frameborder="0" allowfullscreen></iframe>
-        <div class="video-title">Portfolio 7: [Video Title]</div>
-        <div class="video-description">[Video Description]</div>
+        <iframe src="https://www.youtube.com/embed/9d88uHA_UeY?si=ecTt39qbZtJmsJxt" frameborder="0" allowfullscreen></iframe>
+        <div class="video-title">Portfolio 7: Boxing</div>
+        <div class="video-description">In this demo, there is a fighter who can dodge your punches and then do a custom dance. Dodging the punches required using triggers and setting up an appropriate animation scheme. Creating the custom dance required the use of Avatar masks.</div>
       </div>
 
       <!-- Video 8 -->
       <div class="video-item">
-        <iframe src="https://www.youtube.com/embed/iIvvqRMVtIo?si=G4pkWa9sYFsQO9CV" frameborder="0" allowfullscreen></iframe>
-        <div class="video-title">Portfolio 8: [Video Title]</div>
-        <div class="video-description">[Video Description]</div>
+        <iframe src="https://www.youtube.com/embed/hhY_A7x4D4U?si=CJLVhhtR8haiRQJ1" frameborder="0" allowfullscreen></iframe>
+        <div class="video-title">Portfolio 8: Hand Gestures</div>
+        <div class="video-description">In this demo, I used transforms from the hand tracking skeleton to map out distances between key points on the right hand. I could then use these distances to determine the gesture being performed. This program recognizes a flat hand "hi" gesture, a thumbs up, and pointing with the index finger. </div>
       </div>
     </div>
 
@@ -120,6 +143,6 @@
     <div class="github-link">
       <a href="https://github.com/csci48306830fa23/portfolio-sohan-uga" target="_blank">View my GitHub Repository</a>
     </div>
-  </main>
+    </main>
 </body>
 </html>
